@@ -56,5 +56,22 @@
             Assert.AreEqual(5, sortedDictionary["A"], "Element value not changed.");
             Assert.AreEqual(10, sortedDictionary["B"], "Element value not changed.");
         }
+
+        [Test]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void RemoveElemet()
+        {
+            var sortedDictionary = new SortedDictionary<string, int>();
+
+            sortedDictionary.Add("A", 1);
+            sortedDictionary.Add("B", 2);
+
+            Assert.AreEqual(2, sortedDictionary.Count);
+
+            sortedDictionary.Remove("B");
+
+            Assert.AreEqual(1, sortedDictionary.Count, "Element number is wrong.");
+            Assert.Throws<System.Collections.Generic.KeyNotFoundException>(() => sortedDictionary["B"]);
+        }
     }
 }
