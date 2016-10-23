@@ -20,6 +20,7 @@ namespace DataStructures.Trees
             InOrder = 0,
             PreOrder = 1,
             PostOrder = 2
+
         }
 
 
