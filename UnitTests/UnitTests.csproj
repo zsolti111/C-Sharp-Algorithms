@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AlgorithmsTests\GreatestCommonDivisorTest.cs" />
+    <Compile Include="AlgorithmsTests\HelpersTest.cs" />
     <Compile Include="AlgorithmsTests\PermutationTest.cs" />
     <Compile Include="DataStructuresTests\StackTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
