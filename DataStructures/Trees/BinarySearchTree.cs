@@ -34,6 +34,7 @@ namespace DataStructures.Trees
 
         public virtual BSTNode<T> Root
         {
+
             get { return this._root; }
             internal set { this._root = value; }
         }
