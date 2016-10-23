@@ -1,8 +1,7 @@
 ﻿namespace UnitTests.AlgorithmsTests
 {
-    using System;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Algorithms.Numeric;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
     /// <summary>
     /// Greates common divisor tests.
     /// </summary>
@@ -10,7 +9,7 @@
     public class GreatestCommonDivisorTest
     {
         /// <summary>
-        /// Test great
+        /// Test greatest common divisors algorithms.
         /// </summary>
         [TestMethod]
         public void GreatestCommonDivisorAlgorithmTest()
