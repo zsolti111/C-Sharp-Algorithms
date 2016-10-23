@@ -17,19 +17,19 @@
             uint a = 10;
             uint b = 5;
 
-            uint GCD = GreatestCommonDivisor.FindGCD(a, b);
+            int GCD = (int)GreatestCommonDivisor.FindGCD(a, b);
             Assert.AreEqual(5, GCD);
 
             a = 154;
             b = 77;
 
-            GCD = GreatestCommonDivisor.FindGCD(a, b);
+            GCD = (int)GreatestCommonDivisor.FindGCD(a, b);
             Assert.AreEqual(77, GCD);
 
             a = 582;
             b = 168;
 
-            GCD = GreatestCommonDivisor.FindGCD(a, b);
+            GCD = (int)GreatestCommonDivisor.FindGCD(a, b);
             Assert.AreEqual(6, GCD);
         }
 
@@ -42,19 +42,19 @@
             uint a = 79; // is prime
             uint b = 128;
 
-            var GCD = GreatestCommonDivisor.FindGCD(a, b);
+            int GCD = (int)GreatestCommonDivisor.FindGCD(a, b);
             Assert.AreEqual(1, GCD);
 
             a = 1193; // is prime
             b = 2222;
 
-            GCD = GreatestCommonDivisor.FindGCD(a, b);
+            GCD = (int)GreatestCommonDivisor.FindGCD(a, b);
             Assert.AreEqual(1, GCD);
 
             a = 1553; // is prime
             b = 1559; // is prime
 
-            GCD = GreatestCommonDivisor.FindGCD(a, b);
+            GCD = (int)GreatestCommonDivisor.FindGCD(a, b);
             Assert.AreEqual(1, GCD);
         }
 
