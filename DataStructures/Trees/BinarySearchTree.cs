@@ -20,6 +20,7 @@ namespace DataStructures.Trees
             InOrder = 0,
             PreOrder = 1,
             PostOrder = 2
+
         }
 
 
@@ -33,6 +34,7 @@ namespace DataStructures.Trees
 
         public virtual BSTNode<T> Root
         {
+
             get { return this._root; }
             internal set { this._root = value; }
         }
