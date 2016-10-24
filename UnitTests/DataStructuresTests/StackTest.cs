@@ -1,19 +1,11 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataStructures.Lists;
-
-namespace UnitTests.DataStructuresTests
+﻿namespace UnitTests.DataStructuresTests
 {
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using System.Linq;
+
     [TestClass]
     public class StackTest
     {
-
-
-
         /// <summary>
         /// Test the IsEmpty method of the Stack class, if empty
         /// </summary>
@@ -23,7 +15,6 @@ namespace UnitTests.DataStructuresTests
             var stackTest = new DataStructures.Lists.Stack<int>();
 
             Assert.AreEqual(true, stackTest.IsEmpty);
-
         }
 
         /// <summary>
@@ -35,7 +26,6 @@ namespace UnitTests.DataStructuresTests
             stackTest.Push(1);
 
             Assert.AreEqual(false, stackTest.IsEmpty);
-
         }
 
         /// <summary>
@@ -53,7 +43,6 @@ namespace UnitTests.DataStructuresTests
             Assert.AreEqual(9, stackTest.Top);
         }
 
-
         /// <summary>
         /// Test the Push method correct working
         [TestMethod]
@@ -65,14 +54,12 @@ namespace UnitTests.DataStructuresTests
             {
                 stackTest.Push(i);
             }
+
             stackTest.Push(1000);
             var stackTestLastItem = stackTest.First();
 
             Assert.AreEqual(1000, stackTestLastItem);
         }
-
-
-
 
         /// <summary>
         /// Test the Pop method correct working
@@ -90,7 +77,5 @@ namespace UnitTests.DataStructuresTests
             Assert.AreEqual(8, stackTest.First());
             Assert.AreEqual(9, stackTest.Count);
         }
-
-
     }
 }

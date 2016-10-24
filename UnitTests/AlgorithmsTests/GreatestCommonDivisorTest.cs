@@ -2,6 +2,7 @@
 {
     using Algorithms.Numeric;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     /// <summary>
     /// Greates common divisor tests.
     /// </summary>

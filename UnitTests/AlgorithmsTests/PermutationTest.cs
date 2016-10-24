@@ -4,12 +4,11 @@
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     /// <summary>
-    /// 
+    /// Permutation tests.
     /// </summary>
     [TestClass]
     public class PermutationTest
     {
-
         /// <summary>
         /// Test two string are anagrams.
         /// </summary>
@@ -96,6 +95,5 @@
             permutation = Permutations.ComputeDistinct(str1);
             Assert.AreEqual(1680, permutation.Count);
         }
-
     }
 }

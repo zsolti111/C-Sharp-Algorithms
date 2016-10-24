@@ -40,7 +40,7 @@
 
             sortedDictionary.Add("A", 1);
 
-            //Throws InvalidOperationExceptions
+            // Throws InvalidOperationExceptions
             sortedDictionary.Add("A", 2); 
         }
 
@@ -120,6 +120,5 @@
             Assert.AreEqual(true, values.Contains(1));
             Assert.AreEqual(true, values.Contains(2));
         }
-
     }
 }
